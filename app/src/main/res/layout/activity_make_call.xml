@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/mybg"
+    tools:context=".MakeCall">
+<!--    <TextView-->
+<!--        android:id="@+id/tv_logo2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text=""-->
+<!--        android:textColor="@color/colorPrimary"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="30dp"-->
+<!--        android:layout_marginStart="25dp"-->
+<!--        android:layout_marginBottom="5dp"-->
+<!--        android:layout_marginTop="60dp"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:layout_marginLeft="25dp" />-->
+
+    <TextView
+        android:id="@+id/tv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="0dp"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="25dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/home_ic"
+            >
+        </ImageView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AI Home Services"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_mc2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+
+            android:text="Chào mừng: "
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/et_phone2"
+            android:layout_toRightOf="@id/tv_mc2"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btn_call"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/custom_btn"
+            android:textSize="30dp"
+            android:text="Gọi dịch vụ\n hỗ trợ"
+            android:textColor="@android:color/white" />
+        <TextView
+            android:layout_below="@+id/btn_call"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ghi chú
+            \n- 1. Hỏng TV, máy giặt, tủ lạnh, điều hoà\n- 2. Hỏng đường điện, đường mạng\n- 3. Dọn dẹp vệ sinh, sửa chữa nhà cửa"
+            android:layout_centerHorizontal="true"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            />
+            <ImageView
+                android:id="@+id/im_back2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_arrow_left"
+                android:layout_above="@id/swipeLeft2"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/swipeLeft2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng xuất"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"/>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_call_foreground" >
+        <shape android:shape="oval" >
+            <solid android:color="#4285F4"/>
+        </shape>
+
+    </item>
+<!--    <item android:state_pressed="false">-->
+<!--        <shape android:shape="oval">-->
+<!--            <solid android:color="#4285F4"/>-->
+<!--        </shape>-->
+<!--    </item>-->
+<!--    <item android:state_pressed="true">-->
+<!--        <shape android:shape="oval">-->
+<!--            <solid android:color="#4285F4"/>-->
+<!--        </shape>-->
+<!--    </item>-->
+
+</selector>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<shape xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    android:padding="10dp"-->
+    <!--    android:shape="rectangle" >-->
+
+    <!--    <solid android:color="#4285F4" />-->
+
+    <!--    <corners-->
+    <!--        android:bottomLeftRadius="250dp"-->
+    <!--        android:bottomRightRadius="250dp"-->
+    <!--        android:topLeftRadius="250dp"-->
+    <!--        android:topRightRadius="250dp" />-->
+
+    <!--</shape>-->

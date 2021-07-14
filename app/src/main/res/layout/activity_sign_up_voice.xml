@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpVoice"
+    android:background="@drawable/mybg">
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng ký giọng"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.165"
+        android:paddingLeft="10dp"
+        >
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại: "
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/et6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Chưa có số điện thoại"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:paddingLeft="10dp"
+        android:id="@+id/tv_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yêu cầu: Nói một câu bất kỳ tối thiểu là 3s"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.21" />
+
+    <TextView
+        android:paddingLeft="10dp"
+        android:id="@+id/pop_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xem yêu cầu"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35"
+        android:layout_gravity="bottom"
+        >
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mẫu câu 1"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            />
+
+        <Button
+            android:background="@drawable/finalbutton"
+            android:textColor="#4285F4"
+            android:layout_toLeftOf="@id/btn_play1"
+            android:id="@+id/btn_record1"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:textSize="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerInParent="true"
+            android:text="Ghi âm"
+            />
+
+        <Button
+            android:background="@drawable/finalbutton"
+            android:textColor="#4285F4"
+            android:layout_toLeftOf="@id/btn_play1"
+            android:id="@+id/btn_stopRecord1"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+            android:textSize="10dp"
+            android:text="Dừng lại"
+            android:visibility="invisible"
+
+            />
+
+
+        <Button
+            android:background="@drawable/finalbutton"
+            android:textColor="#4285F4"
+            android:layout_toLeftOf="@id/btn_check1"
+            android:layout_marginRight="20dp"
+            android:id="@+id/btn_play1"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:width="10dp"
+            android:height="10dp"
+            android:text="Play"
+            android:textSize="8dp"
+            />
+
+        <Button
+            android:background="@drawable/finalbutton"
+            android:textColor="#4285F4"
+            android:layout_centerInParent="true"
+            android:id="@+id/btn_check1"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:width="10dp"
+            android:height="10dp"
+            android:text="Check"
+            android:textSize="8dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        android:layout_gravity="bottom"
+        >
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mẫu câu 2"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            />
+
+        <Button
+            android:background="@drawable/finalbutton"
+            android:textColor="#4285F4"
+            android:layout_toLeftOf="@id/btn_play2"
+            android:id="@+id/btn_record2"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:textSize="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerInParent="true"
+            android:text="Ghi âm"
+            />
+
+        <Button
+            android:background="@drawable/finalbutton"
+            android:textColor="#4285F4"
+            android:layout_toLeftOf="@id/btn_play2"
+            android:id="@+id/btn_stopRecord2"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+            android:textSize="10dp"
+            android:text="Dừng lại"
+            android:visibility="invisible"
+
+            />
+
+
+        <Button
+            android:background="@drawable/finalbutton"
+            android:textColor="#4285F4"
+            android:layout_toLeftOf="@id/btn_check2"
+            android:layout_marginRight="20dp"
+            android:id="@+id/btn_play2"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:width="10dp"
+            android:height="10dp"
+            android:text="Play"
+            android:textSize="8dp"
+            />
+
+        <Button
+            android:background="@drawable/finalbutton"
+            android:textColor="#4285F4"
+            android:layout_centerInParent="true"
+            android:id="@+id/btn_check2"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:width="10dp"
+            android:height="10dp"
+            android:text="Check"
+            android:textSize="8dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65"
+        android:layout_gravity="bottom"
+        >
+
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mẫu câu 3"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            />
+
+        <Button
+            android:background="@drawable/finalbutton"
+            android:textColor="#4285F4"
+            android:layout_toLeftOf="@id/btn_play3"
+            android:id="@+id/btn_record3"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:textSize="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerInParent="true"
+            android:text="Ghi âm"
+            />
+
+        <Button
+            android:background="@drawable/finalbutton"
+            android:textColor="#4285F4"
+            android:layout_toLeftOf="@id/btn_play3"
+            android:id="@+id/btn_stopRecord3"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+            android:textSize="10dp"
+            android:text="Dừng lại"
+            android:visibility="invisible"
+
+            />
+
+
+        <Button
+            android:background="@drawable/finalbutton"
+            android:textColor="#4285F4"
+            android:layout_toLeftOf="@id/btn_check3"
+            android:layout_marginRight="20dp"
+            android:id="@+id/btn_play3"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:width="10dp"
+            android:height="10dp"
+            android:text="Play"
+            android:textSize="8dp"
+            />
+
+        <Button
+            android:background="@drawable/finalbutton"
+            android:textColor="#4285F4"
+            android:layout_centerInParent="true"
+            android:id="@+id/btn_check3"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:width="10dp"
+            android:height="10dp"
+            android:text="Check"
+            android:textSize="8dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_signUp"
+        android:background="@drawable/finalbutton"
+        android:textColor="#4285F4"
+        android:height="60dp"
+        android:width="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Đăng ký giọng"
+        app:layout_constraintVertical_bias="0.85">
+
+    </Button>
+
+    <!--    <ProgressBar-->
+    <!--        android:id="@+id/loadingView"-->
+    <!--        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Small"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:layout_width="60dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@id/btn_signUp"-->
+    <!--        app:layout_constraintLeft_toLeftOf="@id/btn_signUp"-->
+    <!--        app:layout_constraintRight_toRightOf="@id/btn_signUp"-->
+    <!--        app:layout_constraintTop_toTopOf="@id/btn_signUp"-->
+    <!--        app:layout_constraintVertical_bias="0.5"-->
+    <!--        app:layout_constraintHorizontal_bias="1"-->
+    <!--    />-->
+
+    <com.mmdev.loadingviewlib.LoadingView
+        android:id="@+id/loadingView"
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+
+        app:loadStrokeColor="#4285F4"
+        app:loadStrokeWidth="6dp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_signUp"
+        app:layout_constraintLeft_toLeftOf="@id/btn_signUp"
+        app:layout_constraintRight_toRightOf="@id/btn_signUp"
+        app:layout_constraintTop_toTopOf="@id/btn_signUp"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintHorizontal_bias="1"
+        android:visibility="invisible"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9"
+        >
+
+        <ImageView
+            android:id="@+id/im_back2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_arrow_left"
+            android:layout_above="@id/swipeLeft"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/swipeLeft"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quay lại"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"/>
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
